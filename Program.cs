@@ -10,6 +10,7 @@ namespace Blog_entityframework
         {
             using (var context = new DataContext()) 
             {
+                // Create with TRAKING
                 var tag = new Tag {Name = "Program", Slug = "aspnet-program"};
                 context.Tags.Add(tag);
                 context.SaveChanges(); // Save changes pega os todos os valores que estão na memoria e salva do banco de dados
