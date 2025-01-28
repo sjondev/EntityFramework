@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Blog_entityframework.Models
 {
+    [Table("Role")]
     public class Role 
     {
         public int Id { get; set; }
