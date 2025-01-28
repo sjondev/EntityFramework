@@ -10,10 +10,14 @@ namespace Blog_entityframework
         {
             using (var context = new DataContext()) 
             {
-               // Delete sem Tracking
-                var tag = context.Tags.FirstOrDefault(x => x.Id == 3);
-                context.Remove(tag); 
-                context.SaveChanges();
+               var list = context
+                            .Posts
+                            .Where(p => p.Title.Contains("aspnet")) // -- ISSO AQUI É LINQ UM FILTRO
+                            .ToList(); // To list sempre tem que ficar no final para ter uma boa performace. porque precisamos fazer filtros ou seja trabalhar com LINQ!!!
+
+               foreach (var post in list){
+                 Console.WriteLine($"{post.Title}");
+               }
             }
         }
     }
