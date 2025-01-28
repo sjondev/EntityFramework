@@ -61,3 +61,4 @@ C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\refint\Blog-entityframe
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.pdb
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.genruntimeconfig.cache
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\ref\Blog-entityframework.dll
+C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.sourcelink.json

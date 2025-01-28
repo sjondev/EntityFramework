@@ -10,12 +10,9 @@ namespace Blog_entityframework
         {
             using (var context = new DataContext()) 
             {
-               // Update sem Tracking
+               // Delete sem Tracking
                 var tag = context.Tags.FirstOrDefault(x => x.Id == 3);
-                tag.Name= ".NET";
-                tag.Slug= "dotnet";
-
-                context.Update(tag);
+                context.Remove(tag); 
                 context.SaveChanges();
             }
         }
