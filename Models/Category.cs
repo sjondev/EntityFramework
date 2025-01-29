@@ -19,7 +19,7 @@ namespace Blog_entityframework.Models
         [Required]
         [MinLength(3)]
         [MaxLength(80)]
-        [Column("Name", TypeName = "NVARCHAR")]
+        [Column("Slug", TypeName = "NVARCHAR")]
         public string Slug { get; set; }
     }
 }

@@ -14,5 +14,6 @@ namespace Blog_entityframework.Models
         public string PasswordHash { get; set; }
         public string Bio { get; set; }
         public string Slug { get; set; }
+        public string Image { get; set; }
     }
 }
