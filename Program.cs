@@ -25,8 +25,8 @@ namespace Blog_entityframework
             };
 
             var post = new Post {
-                Author = user,
-                Category = category,
+                Author = user, // o entity framework vai pegar o 'id' criado que nem scope_identity 
+                Category = category, // o entity framework vai pegar o 'id' criado que nem scope_identity 
                 Title = "My First Blog Post",
                 Slug = "my-first-blog-post",
                 Body = "<p>This is the content of my first blog post.</p>",
