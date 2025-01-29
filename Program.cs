@@ -12,17 +12,15 @@ namespace Blog_entityframework
         {
             using var context = new DataContext();
             
-             var posts = context
-                .Posts
-                .AsNoTracking()
-                // .Where(x => x.AuthorId == 7)
-                .Include(x => x.Author) // o include ele faz um INNER JOIN para trazer os valores da tabela.
-                .Include(x => x.Category)
-                .ThenInclude(x => x.Name) // evitar essa abordagem porque pode trazer SUBSELECTS e isso pode gerar perca de perfomace nas consultas
-                .OrderByDescending(x => x.LastUpdateDate)
-                .ToList();
-
-            foreach (var post in posts) Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em categoria {post.Category?.Name}");
+             var post = context.Posts
+            // .AsNoTracking() // AQUI ELE VAI PRECISAR DO TRACKING para pegar a referencia do ID do Author e do Category
+            .Include(x => x.Author)
+            .Include(x => x.Category)
+            .OrderByDescending(x => x.LastUpdateDate)
+            .FirstOrDefault();
+            post.Author.Name = "Jonatas silva";
+            context.Posts.Update(post);
+            context.SaveChanges();
         }
     }
 }
