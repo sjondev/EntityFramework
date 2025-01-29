@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using Blog_entityframework.Data;
 using Blog_entityframework.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Blog_entityframework
 {
@@ -10,33 +12,15 @@ namespace Blog_entityframework
         {
             using var context = new DataContext();
             
-             var user = new User {
-                Name = "John Doe",
-                Email = "johndoe@example.com",
-                PasswordHash = "1234567890",
-                Bio = "I'm a software engineer.",
-                Image = "https://balta.io",
-                Slug = "john-doe"
-            };
+             var posts = context
+                .Posts
+                .AsNoTracking()
+                // .Where(x => x.AuthorId == 7)
+                .Include(x => x.Author) // o include ele faz um INNER JOIN para trazer os valores da tabela.
+                .OrderByDescending(x => x.LastUpdateDate)
+                .ToList();
 
-            var category = new Category {
-                Name = "Backend",
-                Slug = "backend"
-            };
-
-            var post = new Post {
-                Author = user, // o entity framework vai pegar o 'id' criado que nem scope_identity 
-                Category = category, // o entity framework vai pegar o 'id' criado que nem scope_identity 
-                Title = "My First Blog Post",
-                Slug = "my-first-blog-post",
-                Body = "<p>This is the content of my first blog post.</p>",
-                Summary = "Neste artigo tem um exemplo legal", 
-                CreateDate = DateTime.Now,
-                LastUpdateDate = DateTime.Now
-            };
-
-            context.Posts.Add(post);
-            context.SaveChanges();       
+            foreach (var post in posts) Console.WriteLine($"{post.Title} escrito por {post.Author?.Name}");
         }
     }
 }
