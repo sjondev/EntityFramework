@@ -17,10 +17,11 @@ namespace Blog_entityframework
                 .AsNoTracking()
                 // .Where(x => x.AuthorId == 7)
                 .Include(x => x.Author) // o include ele faz um INNER JOIN para trazer os valores da tabela.
+                .Include(x => x.Category)
                 .OrderByDescending(x => x.LastUpdateDate)
                 .ToList();
 
-            foreach (var post in posts) Console.WriteLine($"{post.Title} escrito por {post.Author?.Name}");
+            foreach (var post in posts) Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}");
         }
     }
 }
