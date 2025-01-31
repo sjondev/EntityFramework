@@ -55,10 +55,12 @@ C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.Ge
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.AssemblyInfoInputs.cache
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.AssemblyInfo.cs
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.csproj.CoreCompileInputs.cache
+C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.sourcelink.json
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-ent.5BFC966D.Up2Date
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.dll
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\refint\Blog-entityframework.dll
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.pdb
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.genruntimeconfig.cache
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\ref\Blog-entityframework.dll
-C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.sourcelink.json
+C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Humanizer.dll
+C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
