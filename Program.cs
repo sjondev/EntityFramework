@@ -1,4 +1,6 @@
-﻿using Blog_entityframework.Data;
+﻿using System;
+using System.Linq;
+using Blog_entityframework.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Blog_entityframework
@@ -8,16 +10,12 @@ namespace Blog_entityframework
         static void Main(string[] args)
         {
             using var context = new DataContext();
-            var posts = context
-                        .Posts
-                        .Include(x => x.Author)
-                            /* em alguns cenarios vamos usar o theninlude porem deve ser envitado 
-                            porque ele execulta um subselect no sql e isso não é bom porque
-                            perde performace no banco de dados. */
-                            .ThenInclude(x => x.Roles); 
-                            
-            
 
+            var posts = context.PostsWithContTags.ToList();                            
+            foreach (var post in posts) {
+                Console.WriteLine($"{post.Name} {post.Count}");
+            }
+            
         }
     }
 }
