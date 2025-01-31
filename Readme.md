@@ -11,8 +11,8 @@ Comandos para adicionar o pacote ao seu projeto caso esteja em Visual Studio Cod
 * dotnet tool install --global dotnet-ef
 
 - Antes de fazer um dotnet ef e fazer as migrações faça isso:
-* dotnet clean
-* dotnet build
+    * dotnet clean
+    * dotnet build
 
 ## Caso queira escrever ou gerar o SQL pelo script ou até fazer uma performace
 * dotnet ef migrations script -o ./script.sql
