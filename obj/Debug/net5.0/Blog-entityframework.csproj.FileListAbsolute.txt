@@ -4,9 +4,11 @@ C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Blog-entityframework.ru
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Blog-entityframework.runtimeconfig.dev.json
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Blog-entityframework.dll
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Blog-entityframework.pdb
+C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Humanizer.dll
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
@@ -62,5 +64,3 @@ C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\refint\Blog-entityframe
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.pdb
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\Blog-entityframework.genruntimeconfig.cache
 C:\Users\jonat\www\Blog-entityframework\obj\Debug\net5.0\ref\Blog-entityframework.dll
-C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Humanizer.dll
-C:\Users\jonat\www\Blog-entityframework\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
