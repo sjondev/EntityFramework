@@ -9,13 +9,15 @@ namespace Blog_entityframework.Data
         // public DbSet<UserRole> UserRoles {get; set;}
         // public DbSet<PostTag> PostTags { get; set; }
 
+        // Mapping using DbSet
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles {get; set;}
         public DbSet<Post> Posts { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Category> Categories { get; set; }
 
+        // Conection with database
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer(@"Server=localhost,1433;Database=Blog;User ID=SA;Password=1q2w3e4r@#$;TrustServerCertificate=True;");
+            => options.UseSqlServer(@"Server=localhost,1433;Database=NameDataBase;User ID=SA;Password=****;TrustServerCertificate=True;");
     }
 }
