@@ -10,6 +10,7 @@ namespace Blog_entityframework
     {
         static void Main(string[] args)
         {
+            using var context = new DataContext();
             
         }
     }
